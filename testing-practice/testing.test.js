@@ -15,3 +15,11 @@ test("Calculator adds correctly", () => {
 test("Calculator subtracts correctly", () => {
   expect(calculator.subtract(2, 2)).toBe(0);
 });
+
+test("Calculator divides correctly", () => {
+  expect(calculator.divide(2, 2)).toBe(1);
+});
+
+test("Calculator multiplies correctly", () => {
+  expect(calculator.multiply(2, 2)).toBe(4);
+});
