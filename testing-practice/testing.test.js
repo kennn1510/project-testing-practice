@@ -1,9 +1,13 @@
-import { capitalize, reverseString } from "./testing";
+import {capitalize, reverseString, calculator} from "./testing";
 
 test("capitalize function takes a string and returns first character capitalized", () => {
-  expect(capitalize("hello")).toBe("Hello");
+    expect(capitalize("hello")).toBe("Hello");
 });
 
 test("Reverses string", () => {
-  expect(reverseString("hello")).toBe("olleh");
+    expect(reverseString("hello")).toBe("olleh");
 });
+
+test("Calculator adds correctly", () => {
+    expect(calculator.add(2, 2)).toBe(4);
+})
