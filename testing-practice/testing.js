@@ -60,13 +60,16 @@ function caesarCipher(str, shift) {
 }
 
 function analyzeArray(arr) {
-    const object = {average: null};
-    const initialValue = 0;
+    const object = {average: null, min: arr[0], max: arr[0], length: null};
+
     object.average = arr.reduce(
         (accumulator, currentValue) => accumulator + currentValue,
-        initialValue
-    );
-    arr.reduce();
+        0
+    ) / arr.length;
+    object.min = Math.min(...arr);
+    object.max = Math.max(...arr);
+    object.length = arr.length;
+
     return object;
 }
 
